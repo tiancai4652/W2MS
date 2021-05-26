@@ -21,6 +21,9 @@ namespace W2MS
             Checker.Check(SelectionSort.Sort);
             Checker.Check(BubbleSort.Sort);
             Checker.Check(InsertSort.Sort);
+            Checker.Check(ShellSort.Sort);
+
+            ShellSort.Sort(array);
 
             Console.ReadKey();
 

@@ -12,7 +12,7 @@ namespace W2MS.Check
 
         public static void Check(Action<int[]> func)
         {
-            int testTime = 500;
+            int testTime = 5000;
             int size = 10;
             int value = 100;
             bool succeed = true;
