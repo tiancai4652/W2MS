@@ -14,11 +14,12 @@ namespace W2MS
         {
             int[] array = { 4, 5, 2, 6, 0, 1, 3, 7, 8 };
 
-            Checker.rightMethod(array);
             //SelectionSort.Sort(array);
             //BubbleSort.Sort(array);
             //InsertSort.Sort(array);
 
+            Checker.Check(SelectionSort.Sort);
+            Checker.Check(BubbleSort.Sort);
             Checker.Check(InsertSort.Sort);
 
             Console.ReadKey();

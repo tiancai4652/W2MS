@@ -18,7 +18,6 @@ namespace W2MS.Sort
                 var index= GetMinIndex(array,i);
                 Swap(array, i, index);
             }
-            Print(array);
         }
 
         public static int GetMinIndex(int[] array,int start)

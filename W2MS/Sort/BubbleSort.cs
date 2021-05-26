@@ -23,7 +23,6 @@ namespace W2MS.Sort
                     }
                 }
             }
-            Print(array);
         }
     }
 }

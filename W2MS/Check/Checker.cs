@@ -12,21 +12,21 @@ namespace W2MS.Check
 
         public static void Check(Action<int[]> func)
         {
-            int testTime = 500000;
+            int testTime = 500;
             int size = 10;
             int value = 100;
             bool succeed = true;
             for (int i = 0; i < testTime; i++)
             {
                 int[] arr1 = generateRandomArray(size, value);
-                int[] arr2 = (int[])arr1.Clone();
-                int[] arr3 = (int[])arr1.Clone();
-                func(arr1);
-                rightMethod(arr2);
-                if (!isEqual(arr1, arr2))
+                int[] arr2 = (int[])(arr1.Clone());
+                int[] arr3 = (int[])(arr1.Clone());
+                func(arr2);
+                arr3= rightMethod(arr3);
+                if (!isEqual(arr2, arr3))
                 {
                     succeed = false;
-                    SortBase.Print(arr3);
+                    SortBase.Print(arr1);
                     break;
                 }
             }
@@ -70,11 +70,11 @@ namespace W2MS.Check
             return arr;
         }
 
-        public static void rightMethod(int[] arr)
+        public static int[] rightMethod(int[] arr)
         {
             var list = arr.ToList();
             list.Sort();
-            arr = list.ToArray();
+            return list.ToArray();
         }
     }
 }

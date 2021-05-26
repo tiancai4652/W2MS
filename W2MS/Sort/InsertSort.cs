@@ -17,7 +17,6 @@ namespace W2MS.Sort
             {
                 InsertAndSort(array, i);
             }
-            Print(array);
         }
 
         static void InsertAndSort(int[] arraySorted, int index)
