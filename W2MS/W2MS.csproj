@@ -43,8 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Check\Checker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sort\BubbleSort.cs" />
+    <Compile Include="Sort\InsertSort.cs" />
     <Compile Include="Sort\SelectionSort.cs" />
     <Compile Include="Sort\SortBase.cs" />
   </ItemGroup>

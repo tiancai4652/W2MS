@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace W2MS.Sort
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class SelectionSort: SortBase
     {
         public static void Sort(int[] array)
