@@ -33,6 +33,6 @@ namespace W2MS.Sort
             return index;
         }
 
-       
-    }
+	
+	}
 }

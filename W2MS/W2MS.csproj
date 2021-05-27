@@ -44,6 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Check\Checker.cs" />
+    <Compile Include="Offical\Code01_Base.cs" />
+    <Compile Include="Offical\Code03_InsertionSort.cs" />
+    <Compile Include="Offical\Code02_BubbleSort.cs" />
+    <Compile Include="Offical\Code01_SelectionSort.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sort\BubbleSort.cs" />
